@@ -26,38 +26,39 @@
      android:id="@+id/imageView"
      android:layout_width="214dp"
      android:layout_height="211dp"
-     app:srcCompat="@drawable/LOGO"
-     tools:layout_editor_absoluteX="83dp"
-     tools:layout_editor_absoluteY="16dp" />
+     android:layout_marginTop="36dp"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.497"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:srcCompat="@drawable/logo" />
 
  <FrameLayout
-        android:layout_width="410dp"
-        android:layout_height="60dp"
-        android:background="@color/purple_700"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:ignore="MissingConstraints">
+     android:id="@+id/frameLayout"
+     android:layout_width="410dp"
+     android:layout_height="60dp"
+     android:background="@color/purple_700"
+     app:layout_constraintBottom_toBottomOf="parent"
+     tools:ignore="MissingConstraints"
+     tools:layout_editor_absoluteX="0dp">
 
+
+  <ImageButton
+      android:id="@+id/imageView_first"
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      android:layout_marginBottom="10dp"
+      android:scaleType="fitXY"
+      app:srcCompat="@drawable/menu" />
+
+  <ImageButton
+      android:id="@+id/imageView_second"
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      android:scaleType="fitXY"
+      app:srcCompat="@drawable/coeur" />
 
  </FrameLayout>
-
- <ImageButton
-     android:id="@+id/imageView_second"
-     android:layout_width="60dp"
-     android:layout_height="60dp"
-     android:scaleType="fitXY"
-     app:srcCompat="@drawable/coeur"
-     tools:layout_editor_absoluteX="250dp"
-     tools:layout_editor_absoluteY="589dp" />
-
- <ImageButton
-     android:id="@+id/imageView_first"
-     android:layout_width="60dp"
-     android:layout_height="60dp"
-     android:scaleType="fitXY"
-     app:srcCompat="@drawable/Menu"
-     tools:layout_editor_absoluteX="122dp"
-     tools:layout_editor_absoluteY="589dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
